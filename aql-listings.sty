@@ -1,0 +1,28 @@
+
+\lstdefinelanguage{aql}{
+  keywords={select, from, where, and, group, by, true, false, null,
+            create, array,
+
+            % Aggregation functions
+            approxdc, avg, count, max, min, prod, stdev, sum, var,
+
+            % AFL operators
+            adddim, aggregate, allversions, analyze, apply,
+            attribute_rename, attributes, avg_rank, bernoulli,
+            between, build, build_sparse, cast, concat, consume,
+            cross_join, cumulate, deldim, dimensions, filter, gemm,
+            gesvd, help, index_lookup, input, insert, join, list,
+            load, load_module, load_library, lookup, merge, mpi_init,
+            normalize, project, quantile, rank, redimension, regrid,
+            remove, rename, repart, reshape, reverse, sample, save,
+            scan, show, slice, sort, store, subarray, substitute,
+            thin, transpose, uniq, unload_library, unpack,
+            variable_window, versions, window, xgrid,
+
+            bool, char, datetime, datetimetz, double, float, int8,
+            int16, int32, int64, string, uint8, uint16, uint32, uint64},
+  morecomment=[l]{--},
+  morecomment=[s]{/*}{*/},
+  morestring=[d]',
+  morestring=[d]",
+}[keywords, comments, strings]
