@@ -4,7 +4,8 @@ Functional Language.
 
 Author: Parker Abercrombie
 
-$ Usage
+Usage
+=====
 
 Import the style in the document preamble, and select language aql:
 
