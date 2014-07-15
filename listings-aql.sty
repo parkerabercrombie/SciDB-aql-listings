@@ -1,11 +1,18 @@
+% Package to add language definitions for the Array Functional Language
+% and Array Query Language to the listings package. These languages are
+% used by the array database SciDB.
+%
+% (c) Parker Abercrombie
+%
+%% This program can be redistributed and/or modified under the terms
+%% of the LaTeX Project Public License Distributed from CTAN archives
+%% in directory macros/latex/base/lppl.txt.
 
+\RequirePackage{listings}
 \lstdefinelanguage{aql}{
-  keywords={select, from, where, and, group, by, true, false, null,
-            create, array,
-
+  keywords={select, from, where, and, group, by, true, false, null, create, array,
             % Aggregation functions
             approxdc, avg, count, max, min, prod, stdev, sum, var,
-
             % AFL operators
             adddim, aggregate, allversions, analyze, apply,
             attribute_rename, attributes, avg_rank, bernoulli,
@@ -18,7 +25,7 @@
             scan, show, slice, sort, store, subarray, substitute,
             thin, transpose, uniq, unload_library, unpack,
             variable_window, versions, window, xgrid,
-
+            % Data types
             bool, char, datetime, datetimetz, double, float, int8,
             int16, int32, int64, string, uint8, uint16, uint32, uint64},
   morecomment=[l]{--},
@@ -26,3 +33,5 @@
   morestring=[d]',
   morestring=[d]",
 }[keywords, comments, strings]
+
+\endinput
